@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './Login';
 import Dashboard from './Dashboard';
 import AddEvent from './AddEvent';
+import RegisterTicket from './RegisterTicket';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -23,6 +24,10 @@ function App() {
         <Route 
           path="/add-event" 
           element={user ? <AddEvent /> : <Navigate to="/login" />} 
+        />
+        <Route 
+          path="/register-ticket" 
+          element={user ? <RegisterTicket /> : <Navigate to="/login" />} 
         />
         <Route path="/" element={<Navigate to="/dashboard" />} />
         <Route path="*" element={<Navigate to="/login" />} />
