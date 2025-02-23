@@ -21,3 +21,11 @@ This project is a lightweight admin website built using HTML, CSS, and React JS.
    ```bash
    git clone https://github.com/yourusername/ticketmaster-admin-website.git
    cd ticketmaster-admin-website
+
+2. Install dependencies:
+   ```bash
+   npm install
+
+3. Start the development server:
+   ```bash
+   npm start
